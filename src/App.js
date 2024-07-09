@@ -12,7 +12,7 @@ const App = () => {
                 <Menubar />
                 <Routes>
                     <Route path="/login" element={<LoginPage />} />
-                    <Route path="/demoredux" element={<DemoRedux />} />
+                    {/* <Route path="/demoredux" element={<DemoRedux />} /> */}
                     <Route path="/dashboard" element={<SimpleChart />} />
                 </Routes>
             </div>

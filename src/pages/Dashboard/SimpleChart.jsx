@@ -10,7 +10,6 @@ const SimpleChart = () => {
     { label: "May", value: 150 },
     { label: "Jun", value: 175 },
   ];
-
   return (
     <div className="chart-container">
       <div className="chart">
@@ -24,7 +23,6 @@ const SimpleChart = () => {
         ))}
       </div>
       <div className="chart-description">
-        <h3>Sample Data Information</h3>
         <ul>
           {data.map((item, index) => (
             <li key={index}>
