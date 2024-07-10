@@ -15,6 +15,9 @@ const Dashboard = () => {
         <CardComponent />
       </div>
       <div className="table-dashboard">
+        <div className="dashboard-title">
+          Bảng dữ liệu
+        </div>
         <TableDashboard />
       </div>
 

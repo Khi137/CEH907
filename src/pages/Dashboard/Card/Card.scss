@@ -15,12 +15,23 @@
     justify-content: space-between;
   }
  .ant-card-body{
-    height: 150px;
+    height: 23vh;
  }
 
  .body-card-number{
-    font-size: 30px;;
-    color:blue;
+    font-size: 4.5vh;
+    color: black;
     font-weight: bold;
     text-align: center;
+ }
+
+ .body-card{
+  text-align: center;
+ }
+
+ .card{
+  text-align: center;
+  border-radius: 20px;
+  border: 2px solid black;
+  line-height: 2px solid black;
  }
