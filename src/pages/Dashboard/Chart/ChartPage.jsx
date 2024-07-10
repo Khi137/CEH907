@@ -22,24 +22,9 @@ const ChartPage = () => {
 
   return (
     <>
-      <div className="chart">
+
         <Line {...props} />
-      </div>
-      <div className="chart">
-        <Bar {...props} />
-      </div>
-      <div className="chart">
-        <Pie {...props} />
-      </div>
-      <div className="chart">
-        <Column {...props} />
-      </div>
-      <div className="chart">
-        <Waterfall {...props} />
-      </div>
-      <div className="chart">
-        <Histogram {...props} />
-      </div>
+  
     </>
   );
 };

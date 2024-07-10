@@ -122,7 +122,6 @@ export default function LoginPage() {
   return (
     <div className="container">
       <div className="form-container">
-        {/* LottieFile */}
         <div className="imagelogin-container" style={{ flex: "1" }}>
         <img src={loginImage} alt="Login" className="login-image" />
         </div>

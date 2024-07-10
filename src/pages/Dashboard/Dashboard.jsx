@@ -1,8 +1,8 @@
 import React from 'react';
-import MenuTop from './MenuTop';
-import TableDashboard from './TableDashboard';
-import ChartPage from './ChartPage';
-import CardComponent from './CardDashboard';
+import MenuTop from './Menu/MenuTop';
+import TableDashboard from './Table/TableDashboard';
+import ChartPage from './Chart/ChartPage';
+import CardComponent from './Card/CardDashboard';
 import './Dashboard.scss'; // 
 
 const Dashboard = () => {
@@ -19,6 +19,7 @@ const Dashboard = () => {
       </div>
 
       <div className="chart-page">
+        
         <ChartPage />
       </div>
     </div>
