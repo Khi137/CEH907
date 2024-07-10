@@ -1,15 +1,14 @@
 import React from 'react';
-import BarChart from './BarChart';
-import LineChart from './LineChart';
-
+import { Menu, Table } from "antd";
+import MenuTop from './MenuTop';
+import TableDashboard from './TableDashboard';
+import ChartPage from './Chart';
 const Dashboard = () => {
   return (
     <div>
-      <h1>Simple Dashboard</h1>
-      <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '20px' }}>
-        <BarChart />
-        <LineChart />
-      </div>
+        <MenuTop />
+        <TableDashboard/>
+        <ChartPage/>
     </div>
   );
 };
