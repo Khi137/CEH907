@@ -1,64 +1,83 @@
-/* src/pages/LoginPage.scss */
-
 .container {
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .form-container {
-    flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-  }
-  
-  h3 {
-    font-weight: 300;
-    font-size: 35px;
-    text-align: center;
-  }
-  
-  .login-form {
-    padding-top: 10px;
-    width: 300px;
-  
-    .ant-form-item {
-      margin-bottom: 16px;
-  
-      .ant-input,
-      .ant-input-password {
-        width: 300px;
-        height: 50px;
-  
-        &::placeholder {
-          line-height: 35px;
-        }
-      }
-  
-      .ant-btn {
-        background-color: #4a9fc4;
-        min-width: 300px;
-      }
-  
-      .ant-form-item-control-input-content {
-        display: flex;
-        justify-content: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to bottom, #EBE0EA 60%, #70C2B4 40%);
+}
+
+.form-container {
+  display: flex;
+  width: 80%;
+  max-width: 1200px;
+  background: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.imagelogin-container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-image {
+  width: 100%;
+  height: auto;
+}
+
+.form-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+}
+
+h3 {
+  font-weight: 300;
+  font-size: 35px;
+  text-align: center;
+}
+
+.login-form {
+  padding-top: 10px;
+  width: 300px;
+
+  .ant-form-item {
+    margin-bottom: 16px;
+
+    .ant-input,
+    .ant-input-password {
+      width: 300px;
+      height: 50px;
+
+      &::placeholder {
+        line-height: 35px;
       }
     }
-  
-    .btnBlue {
+
+    .ant-btn {
       background-color: #4a9fc4;
       min-width: 300px;
     }
-  
-    .register-link {
-      color: #fa264b;
-      text-align: center;
-      display: block;
-      margin-top: 16px;
+
+    .ant-form-item-control-input-content {
+      display: flex;
+      justify-content: center;
     }
   }
-  
+
+  .btnBlue {
+    background-color: #4a9fc4;
+    min-width: 300px;
+  }
+
+  .register-link {
+    color: #fa264b;
+    text-align: center;
+    display: block;
+    margin-top: 16px;
+  }
+}

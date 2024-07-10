@@ -101,27 +101,32 @@ import { NavLink } from "react-router-dom";
 import Axios from 'axios';
 import { loginAction } from "../../redux/action/user";
 import { useDispatch } from "react-redux";
+import loginImage from '../../assets/img/login.jpg'
 
 const token = ' ';
 Axios.defaults.headers.common['header'] = `TokenCybersoft ${token}`;
 
 export default function LoginPage() {
-    const dispatch = useDispatch(); 
-    const onFinish = (values) => {
-      console.log("values", values);
-      let onSuccess = () => (window.location.href = "/dashboard");
-      dispatch(loginAction(values, onSuccess));
-    };
-  
-    const onFinishFailed = (errorInfo) => {
-      console.log("Failed:", errorInfo);
-      message.error("Fail to login!!!");
-    };
+  const dispatch = useDispatch();
+  const onFinish = (values) => {
+    console.log("values", values);
+    let onSuccess = () => (window.location.href = "/dashboard");
+    dispatch(loginAction(values, onSuccess));
+  };
+
+  const onFinishFailed = (errorInfo) => {
+    console.log("Failed:", errorInfo);
+    message.error("Fail to login!!!");
+  };
 
   return (
     <div className="container">
       <div className="form-container">
-        <div className="flex flex-col items-center justify-center">
+        {/* LottieFile */}
+        <div className="imagelogin-container" style={{ flex: "1" }}>
+        <img src={loginImage} alt="Login" className="login-image" />
+        </div>
+        <div style={{ marginRight: '40px' }} className="flex flex-col items-center justify-center">
           <h3 className="text-center">LOGIN</h3>
           <Form
             className="flex flex-col align-center justify-center login-form"
