@@ -1,0 +1,22 @@
+.dashboard-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; 
+    padding: 20px; 
+  }
+  
+  .menu-top {
+    margin-bottom: 20px;
+  }
+  
+  .chart-page {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  .chart {
+    width: 24%;
+  }
+  

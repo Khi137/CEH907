@@ -1,14 +1,26 @@
 import React from 'react';
-import { Menu, Table } from "antd";
 import MenuTop from './MenuTop';
 import TableDashboard from './TableDashboard';
-import ChartPage from './Chart';
+import ChartPage from './ChartPage';
+import CardComponent from './CardDashboard';
+import './Dashboard.scss'; // 
+
 const Dashboard = () => {
   return (
-    <div>
+    <div className="dashboard-container">
+      <div className="menu-top">
         <MenuTop />
-        <TableDashboard/>
-        <ChartPage/>
+      </div>
+      <div className="card-component">
+        <CardComponent />
+      </div>
+      <div className="table-dashboard">
+        <TableDashboard />
+      </div>
+
+      <div className="chart-page">
+        <ChartPage />
+      </div>
     </div>
   );
 };
